@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:rgba(19,17,17);
+    color: #ff0000;
+    text-align: center;
+    background-image: url(/images/halloween/frame.png);
+    background-size: cover;
+  }
+
+  .navbar {
+    background-color: #2e2d2d85;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .content {
+    text-align: center;
+    margin: 50px 20px;
+  }
+
+  .event-details {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    height: 20px;
+  }
+
+  .btn:hover {
+    background-color: #e64a19;
+  }
+
+  .footer {
+    background-color: #33333380;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .footer p {
+    margin: 0;
+  }
+
+  .moon {
+    background-image: url('/images/halloween/ghost.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 500px;
+    right: 1200px;
+    animation: movewitch 20s linear infinite;
+  }
+
+  @keyframes movewitch {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(600px);
+    }
+  }
